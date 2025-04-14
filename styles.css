@@ -4,13 +4,37 @@
     font-weight: 400;
     font-style: normal;
 }
+h1{
+    text-align: center;
+}
+h3{
+    font-size: 12px;
+}
+p{
+    font-size: 8px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+.text-center{
+    text-align: center;
+}
+
+.icon-text{
+    font-size: 8px;
+    
+}
 .bg-one {
     background-color: rgb(254, 254, 254);
+    color: black;
 }
 
 .bg-two {
     background-color: rgb(158, 160, 162);
+    color: white;
 }
 
 .spacer {
@@ -24,17 +48,71 @@
 
 
 .flex-row{
-    
     display: flex;
     flex-direction: row;
+    
+
+}
+.links-row{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+.between{
     justify-content: space-between;
 }
 
 main{
-    text-align: center;
     height: 100%;
 }
 section{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.port-link{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    min-width: 80px;
+
+}
+.port-link:hover{
+    transform:scale(1.1)
+}
+
+.content {
+    flex: 1;
+  }
+
+footer{
+
+    text-align: center;
+    padding: 15px 0;
+  }
+
+
+.projects-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px) {
+    .projects-container{
+        flex-direction: column;
+    }
+}
+  
+
+.tech-used{
+    font-size: 8px;
+}
+
+.tech-used-icon{
+    max-width: 20px;
+    max-width: 20px;
 }
