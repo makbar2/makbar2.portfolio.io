@@ -1,51 +1,52 @@
 * {
     margin: 0;
     font-family: "Liter", sans-serif;
-    font-weight: 400;
+
     font-style: normal;
-}
-h1{
-    text-align: center;
-}
-h3{
-    font-size: 12px;
-}
-p{
-    font-size: 8px;
-}
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.icon-text{
-    font-size: 8px;
     
-}
-.bg-one {
-    background-color: rgb(254, 254, 254);
-    color: black;
+    color: #e5e5e9/* optional: makes text readable */
+
 }
 
-.bg-two {
-    background-color: rgb(158, 160, 162);
-    color: white;
-}
-
-.spacer {
-    background-image: url("/assets/layered-waves-haikei.svg");
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+body 
+{
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+    color: #f5f5f5; /* optional: makes text readable */
     background-size: cover;
 }
 
+.card{
+    background-color: #292939;
+}
+
+header{
+    padding-top: 10%;
+}
+.cool-rect
+{
+    
+    padding: 2%;
+    width: 70%;
+    background-color: #3333d4;
+    transform: skew(-20deg);
+
+}
+
+.c1{
+    color: #0b0b55
+}
+
+
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
 
 .flex-row{
     display: flex;
@@ -54,6 +55,7 @@ p{
 
 }
 .links-row{
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -68,51 +70,16 @@ p{
 main{
     height: 100%;
 }
-section{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.port-link{
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    min-width: 80px;
-
-}
-.port-link:hover{
-    transform:scale(1.1)
-}
-
-.content {
-    flex: 1;
-  }
-
-footer{
-
-    text-align: center;
-    padding: 15px 0;
-  }
 
 
-.projects-container
+
+
+.grid
 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
 }
 
-@media (max-width: 700px) {
-    .projects-container{
-        flex-direction: column;
-    }
-}
-  
-
-.tech-used{
-    font-size: 8px;
-}
-
-.tech-used-icon{
-    max-width: 20px;
-    max-width: 20px;
+.pfp{
+    width: 400;
+    height: 400;
 }
