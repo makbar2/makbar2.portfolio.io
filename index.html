@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
 </head>
-<body class="wrapper">
-    <main class=>
+<body >
+    <div class="parallax-bg"></div>
+    <main class="content">
+        
+
         <header class="">
             <div class="flex-col center">
                 <div class="header">
@@ -19,25 +22,104 @@
                     <h1>Mohammad Akbar Anwar</h1>
                     <p class="cool-rect">Full-Stack Developer</p>
                 </div>
+                <div>
+
+                </div>
             </div>
         </header>
-        <section>
-            <h2>About me</h2>
-            <div class="grid">
-                <p>
-                    Hello i'm Akbar and i'm a Computer Science with Cybersecurity Graduate skilled in full-stack development. 
-                    I enjoy building tools for peoples needs.
-                    I am proficient in Typescript/Javascript, Python and PHP. And i currently learning C# and React to further expand my
-                    skill set.
-                </p>
+        <section >
+            <h1 class="cool-rect title">About me</h1>
+            <div class="grid-about">
+                <div>
+
+                    <p>
+                        Hello i'm Akbar and i'm a Computer Science with Cybersecurity Graduate skilled in full-stack development. 
+                        I enjoy building tools for peoples needs.
+                        I am proficient in Typescript/Javascript, Python and PHP. And i currently learning C# and React to further expand my
+                        skill set.
+                    </p>
+                    <a href="" style="margin-top: 10px; display: block;">View my CV</a>
+                </div>
                 <picture>
                     <img src="./assets/picture.jpg "  class="pfp"/>
                 </picture>
             </div>
         </section>
+        <section>
+            <h1 class="cool-rect title"> Projects</h1>
+            <div class="grid-projects">
+                <div class="card">
+                    <h2>Script Track</h2>
+                    <picture>
+                        <img class="thumbnail" src="assets/scriptTrackOne.png">
+                    </picture>
+                    <div class="">
+                        <p>Developed with:</p>
+                        <img src="./assets/dotnet-svgrepo-com.svg"  class="icon"/>
+                        <img src="./assets/react-svgrepo-com.svg"  class="icon"/>
+                    </div>
+                    <p>
+                        Developed a system to track when prescriptions should be ordered for patients. This system wasn't used due to 
+                        changing pharmacy guidance, as patient led ordering was introduced. This was developed with a .NET api and a React application front-end.
+                    </p>
+                    <a class="link-button">Read more</a>
+                </div>
+
+                <div class="card">
+                    <h2>PharmaFriends</h2>
+                    <picture>
+                        <img class="thumbnail" src="assets/pharm.png">
+                    </picture>
+                    <p>Developed with:</p>
+                    <div class="">
+                        <img src="./assets/node-svgrepo-com.svg"  class="icon"/>
+                        <img src="./assets/mysql-svgrepo-com.svg"  class="icon"/>
+                        <img src="./assets/bootstrap-svgrepo-com.svg"  class="icon"/>
+                    </div>
+                    <p>
+                        Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely.
+                    </p>
+                    <a class="link-button" href="pharmafriends.html">Read more</a>
+                </div>
+
+
+                <div class="card">
+                    <h2>SSH Honeypot</h2>
+                    <p>Developed with:</p>
+                    <div class="">
+                        <img src="./assets/python-svgrepo-com(1).svg"  class="icon"/>
+                        <img src="./assets/terminal-svgrepo-com.svg"  class="icon"/>
+                    </div>
+                    <p>
+                        A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to log user activity.
+                    </p>
+                    <a class="link-button">Read more</a>
+                </div>
+
+                <div class="card">
+                    <h2>Country Caravan Care</h2>
+                    <div class="">
+                        <img src="./assets/python-svgrepo-com(1).svg"  class="icon"/>
+                        <img src="./assets/terminal-svgrepo-com.svg"  class="icon"/>
+                    </div>
+                    <p>
+                        Developed a website for <a href="https://countrycaravancare.co.uk/">Country Caravan Care</a>, that contained all the relevant  information to do with their business,
+                        i ensured that the website was mobile responsive and accessible.
+                    </p>
+                </div>
+
+ 
+                <div></div>
+            </div>
+        </section>
     </main>
     <footer >
-        <p>Nothing cool down here</p>
+       
     </footer>
+
 </body>
+<script>
+
+
+</script>
 </html>

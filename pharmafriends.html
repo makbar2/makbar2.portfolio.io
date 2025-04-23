@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="parallax-bg"></div>
+    <main class="content">
+        <div class="card">
+            <h1>PharmaFriends</h1>
+            <h2>Overview</h2>
+            <p>
+                I took over development of a full-stack web application enabling pharmacists to perform New Medicine Service (NMS) consultations remotely. 
+                The app was originally built with Node.js, Express, and a SQL database. I restructured the backend by modularizing which helped with maintainabiltiy and scalabiltiy
+                , improved the database design (ensuring 3NF to reduce redundancy)
+                ,and added features across both front and backend.
+            </p>
+            <p>The application also featured:</p>
+            <ul>
+                <li>Jwt authentication to protect routes</li>
+                <li>Audit tools to allow non-technical people to audit data without having to access the database directly.</li>
+            </ul>
+            <h2>Technical Challenges & Solutions</h2>
+            <p>
+                Main challenge for developing this program was requirements gathering, as some things weren't made clear enough or features were added that weren't needed.
+                One instance of this is I implemented session timing for consultations (tracking start and end times) based on early discussions about potentially recording audio.
+                Although we didn’t move forward with that, it taught me the importance of confirming scope early.
+            </p>
+
+        </div>
+    </main>
+    <footer >
+       
+    </footer>
+
+</body>
+<script>
+
+
+</script>
+</html>
