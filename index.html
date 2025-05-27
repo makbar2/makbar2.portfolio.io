@@ -13,9 +13,15 @@
 <body >
     <div class="parallax-bg"></div>
     <main class="content">
-        
-
-        <header class="">
+        <header >
+            <nav class="" >
+                <ul class="flex-row nav-container">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about" >
             <div class="flex-col center">
                 <div class="header">
                     <div></div>
@@ -23,11 +29,9 @@
                     <p class="cool-rect">Full-Stack Developer</p>
                 </div>
                 <div>
-
+    
                 </div>
             </div>
-        </header>
-        <section >
             <h1 class="cool-rect title">About me</h1>
             <div class="grid-about">
                 <div>
@@ -43,11 +47,11 @@
                 </picture>
             </div>
         </section>
-        <section>
+        <section id="projects">
             <h1 class="cool-rect title"> Projects</h1>
-            <div class="grid-projects">
+            <div class="grid-projects" id="#projects">
                 <div class="card">
-                    <h2>Script Track</h2>
+                    <h2>Order Rx</h2>
                     <picture>
                         <img class="thumbnail" src="assets/scriptTrackOne.png">
                     </picture>
@@ -57,8 +61,8 @@
                         <img src="./assets/react-svgrepo-com.svg"  class="icon"/>
                     </div>
                     <p>
-                        Developed a system to track when prescriptions should be ordered for patients. This system wasn't used due to 
-                        changing pharmacy guidance, as patient led ordering was introduced. This was developed with a .NET api and a React application front-end.
+                        Developed a system that would allow pharmacies to schedule prescription ordering on behalf of patients. This system was discontinued due to patient led ordering being introduced.
+                        It was built with a react front-end that interacted with a rest API made with .NET. 
                     </p>
                     <a class="link-button">Read more</a>
                 </div>
@@ -75,7 +79,8 @@
                         <img src="./assets/bootstrap-svgrepo-com.svg"  class="icon"/>
                     </div>
                     <p>
-                        Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely.
+                        Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely. This was built 
+                        with node.js, express and mysql.
                     </p>
                     <a class="link-button" href="pharmafriends.html">Read more</a>
                 </div>
