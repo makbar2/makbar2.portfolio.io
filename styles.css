@@ -123,10 +123,10 @@ main{
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    max-width: 900px; /* Optional: limit width */
-    margin: 0 auto;   /* Centers the grid horizontally */
-    align-items: center; /* Vertically align items if needed */
-    gap: 1rem; /* Optional: space between columns */
+    max-width: 900px; 
+    margin: 0 auto;   
+    align-items: center; 
+    gap: 1rem; 
 }
 
 .grid-projects
@@ -137,6 +137,16 @@ main{
     margin: 0 auto;
     align-items: center;
     gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .grid-projects, .grid-about{
+        grid-template-columns: 1fr;
+    }
+    .grid-about{
+        margin-left: 10%;
+    }
+    
 }
 
 .pfp{
@@ -151,7 +161,7 @@ main{
 .cool-rect.title {
     margin-top: 5%;
     margin-bottom: 2%;
-    margin-left: 5%;
+    margin-left: 12%;
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
