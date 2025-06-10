@@ -12,15 +12,15 @@
 </head>
 <body >
     <div class="parallax-bg"></div>
+    <header >
+        <nav class="" >
+            <ul class="flex-row nav-container">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="content">
-        <header >
-            <nav class="" >
-                <ul class="flex-row nav-container">
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
         <section id="about" >
             <div class="flex-col center">
                 <div class="header">
@@ -47,72 +47,9 @@
                 </picture>
             </div>
         </section>
-        <section id="projects">
-            <h1 class="cool-rect title"> Projects</h1>
+        <section>
+            <h1 class="cool-rect title"> Projects </h1>
             <div class="grid-projects" id="#projects">
-                <div class="card">
-                    <h2>Order Rx</h2>
-                    <picture>
-                        <img class="thumbnail" src="assets/scriptTrackOne.png">
-                    </picture>
-                    <div class="">
-                        <p>Developed with:</p>
-                        <img src="./assets/dotnet-svgrepo-com.svg"  class="icon"/>
-                        <img src="./assets/react-svgrepo-com.svg"  class="icon"/>
-                    </div>
-                    <p>
-                        Developed a system that would allow pharmacies to schedule prescription ordering on behalf of patients. This system was discontinued due to patient led ordering being introduced.
-                        It was built with a react front-end that interacted with a rest API made with .NET. 
-                    </p>
-                    <a class="link-button">Read more</a>
-                </div>
-
-                <div class="card">
-                    <h2>PharmaFriends</h2>
-                    <picture>
-                        <img class="thumbnail" src="assets/pharm.png">
-                    </picture>
-                    <p>Developed with:</p>
-                    <div class="">
-                        <img src="./assets/node-svgrepo-com.svg"  class="icon"/>
-                        <img src="./assets/mysql-svgrepo-com.svg"  class="icon"/>
-                        <img src="./assets/bootstrap-svgrepo-com.svg"  class="icon"/>
-                    </div>
-                    <p>
-                        Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely. This was built 
-                        with node.js, express and mysql.
-                    </p>
-                    <a class="link-button" href="pharmafriends.html">Read more</a>
-                </div>
-
-
-                <div class="card">
-                    <h2>SSH Honeypot</h2>
-                    <p>Developed with:</p>
-                    <div class="">
-                        <img src="./assets/python-svgrepo-com(1).svg"  class="icon"/>
-                        <img src="./assets/terminal-svgrepo-com.svg"  class="icon"/>
-                    </div>
-                    <p>
-                        A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to log user activity.
-                    </p>
-                    <a class="link-button">Read more</a>
-                </div>
-
-                <div class="card">
-                    <h2>Country Caravan Care</h2>
-                    <div class="">
-                        <img src="./assets/python-svgrepo-com(1).svg"  class="icon"/>
-                        <img src="./assets/terminal-svgrepo-com.svg"  class="icon"/>
-                    </div>
-                    <p>
-                        Developed a website for <a href="https://countrycaravancare.co.uk/">Country Caravan Care</a>, that contained all the relevant  information to do with their business,
-                        i ensured that the website was mobile responsive and accessible.
-                    </p>
-                </div>
-
- 
-                <div></div>
             </div>
         </section>
     </main>
@@ -122,7 +59,62 @@
 
 </body>
 <script>
+    async function loadProjectData()
+    {
+        try{
+            const response =  await fetch("./cards.json");
+            console.log(response);
+            if(response.status !== 200)
+            {
+                throw new Error("Unable to fetch card data");
+            }
+            const data = await response.json();
+            console.log(data);
+            data.map(createCard);
+        }catch(error )
+        {
+            console.log(error);
+        }
+    }
+    
+    function createCard(project)
+    {
+        const iconList = createIconList(project.icons);
+        let element = `
+        <div class="card">
+            <h2>${project.title}</h2>
+            <picture>
+                <img class="thumbnail" src="${project.thumbnail}"/>
+            </picture>
+            <div>
+                ${iconList}
+            </div>
+            <p>
+                ${project.description}
+            </p> 
+            `;
+        if(project.page !== undefined)
+        {
+            element += `<a class="link-button" href="${project.page}">Read more</a> </div>`;
+        }else{
+            element += "</div>";
+        }
+        console.log(element);
+        const projectSection = document.getElementById("#projects");
+        projectSection.innerHTML += element;
+    }
 
+    function createIconList(iconList)
+    {
+        let icons  = "";
+        iconList.forEach(i => {
+            icons += `
+                <img src="${i.url}" alt="${i.name}" class="icon"/>`;
+        });
+        return icons;
+    }
+
+    loadProjectData();
 
 </script>
 </html>

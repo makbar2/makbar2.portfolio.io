@@ -1,0 +1,69 @@
+[
+    {
+    
+        "title": "OrderRx",
+        "thumbnail" : "assets/scriptTrackOne.png",
+        "description" :  " Developed a system that would allow pharmacies to schedule prescription ordering on behalf of patients. This system was discontinued due to patient led ordering being introduced. It was built with a react front-end that interacted with a rest API made with .NET. ",
+        "icons" : [
+            {
+                "name" : "Dotnet",
+                "url": "./assets/dotnet-svgrepo-com.svg"
+            },
+            {
+                "name" : "React",
+                "url" : "./assets/react-svgrepo-com.svg"
+            }
+        ],
+        "page" : "orderrx.html"
+    },
+    {
+        "title": "PharmaFriends",
+        "thumbnail" : "assets/pharm.png",
+        "description" : "Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely. This was built with node.js, express and mysql.",
+        "icons" : [
+            {
+                "name" : "Node",
+                "url" : "./assets/mysql-svgrepo-com.svg"
+            },
+            {
+                "name" : "MySQL",
+                "url" : "./assets/mysql-svgrepo-com.svg"
+            },
+            {
+                "name" : "Boostrap",
+                "url" : "./assets/bootstrap-svgrepo-com.svg"
+            }
+        ],
+        "page" : "pharmafriends.html"
+    },
+    {
+        "title": "SSH Honeypot",
+        "thumbnail": "assets/ssh-honeypot.png",
+        "description": "A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to track user activity.",
+        "icons": [
+            {
+                "name": "Python",
+                "url": "./assets/python-svgrepo-com(1).svg"
+            },
+            {
+                "name": "Terminal",
+                "url": "./assets/terminal-svgrepo-com.svg"
+            }
+        ]
+    },
+    {
+        "title": "Country Caravan Care",
+        "thumbnail": "assets/countrycaravan.png",
+        "description": "Developed a responsive, accessible website for Country Caravan Care, providing essential business information to customers. Visit: https://countrycaravancare.co.uk/",
+        "icons": [
+            {
+                "name": "Python",
+                "url": "./assets/python-svgrepo-com(1).svg"
+            },
+            {
+                "name": "Terminal",
+                "url": "./assets/terminal-svgrepo-com.svg"
+            }
+        ]
+    }
+]

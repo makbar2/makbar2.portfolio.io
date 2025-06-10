@@ -12,20 +12,30 @@
 </head>
 <body >
     <div class="parallax-bg"></div>
+    <header>
+        <nav class="" >
+            <ul class="flex-row nav-container">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    
+                </ul>
+            </nav>
+    </header>
     <main class="content">
         <div class="card">
             <h1>PharmaFriends</h1>
             <h2>Overview</h2>
             <p>
-                I took over development of a full-stack web application enabling pharmacists to perform New Medicine Service (NMS) consultations remotely. 
-                The app was originally built with Node.js, Express, and a SQL database. I restructured the backend by modularizing which helped with maintainabiltiy and scalabiltiy
-                , improved the database design (ensuring 3NF to reduce redundancy)
-                ,and added features across both front and backend.
+                I took over the development of a full-stack web application that enabled pharmacists to carry out New Medicine Service (NMS) consultations remotely. 
+                The application was originally built using Node.js, Express, and a SQL database. I restructured the backend to make it more modular, added new features to both the front and backend, 
+                and designed and developed the database ensuring schema was in third normal form to reduce data redundancy. I also built tools within the web-app for non-technical users 
+                to audit data without directly accessing the database. JWT authentication was used to protect routes and manage access to sensitive data.
             </p>
-            <p>The application also featured:</p>
+            <h3>Technologies used</h3>
             <ul>
-                <li>Jwt authentication to protect routes</li>
-                <li>Audit tools to allow non-technical people to audit data without having to access the database directly.</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>SQL</li>
             </ul>
             <h2>Technical Challenges & Solutions</h2>
             <p>
@@ -33,16 +43,15 @@
                 One instance of this is I implemented session timing for consultations (tracking start and end times) based on early discussions about potentially recording audio.
                 Although we didn’t move forward with that, it taught me the importance of confirming scope early.
             </p>
+            <h3>Admin page</h3>
+            <p>
+                I needed to keep all admin tools on the same page to ensure a smooth experience (no page reloads). To achieve this:
+            </p>
 
         </div>
     </main>
     <footer >
        
     </footer>
-
 </body>
-<script>
-
-
-</script>
 </html>
