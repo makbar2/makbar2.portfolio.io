@@ -24,12 +24,9 @@
         <section id="about" >
             <div class="flex-col center">
                 <div class="header">
-                    <div></div>
+            
                     <h1>Mohammad Akbar Anwar</h1>
-                    <p class="cool-rect">Full-Stack Developer</p>
-                </div>
-                <div>
-    
+                    <p class="cool-rect subtitle">Full-Stack Developer</p>
                 </div>
             </div>
             <h1 class="cool-rect title">About me</h1>
@@ -40,6 +37,14 @@
                         I enjoy building tools for peoples needs.
                         I am proficient in Typescript/Javascript, Python and C#.
                     </p>
+                    <details>
+                        <summary>About this website</summary>
+                        <p>
+                            This website is built with HTML, CSS, and JavaScript. The project cards are generated dynamically 
+                            by reading data from a JSON file, which avoids repetitive HTML and keeps the HTML clean. 
+                            This dynamic rendering approach could also be implemented using <a href="">React</a>.
+                        </p>
+                    </details>
                     <a href="" style="margin-top: 10px; display: block;">View my CV</a>
                 </div>
                 <picture>
@@ -49,8 +54,7 @@
         </section>
         <section>
             <h1 class="cool-rect title"> Projects </h1>
-            <div class="grid-projects" id="#projects">
-            </div>
+            <div class="grid-projects" id="projects"></div>
         </section>
     </main>
     <footer >
@@ -73,7 +77,8 @@
             data.map(createCard);
         }catch(error )
         {
-            console.log(error);
+            console.error("Error loading project data:", error);
+            createErrorMessage();
         }
     }
     
@@ -82,8 +87,16 @@
         const iconList = createIconList(project.icons);
         let element = `
         <div class="card">
-            <h2>${project.title}</h2>
-            <picture>
+            <h2 class="flex-row" style="justify-content:space-between">
+                <div>
+                    ${project.title}
+                </div>
+                <div>
+                    <a href="${project.github}"><img src="assets/github-svgrepo-com.svg" class="icon"/></a>
+                </div>
+            </h2>
+        
+            <picture class="flex-row">
                 <img class="thumbnail" src="${project.thumbnail}"/>
             </picture>
             <div>
@@ -99,8 +112,7 @@
         }else{
             element += "</div>";
         }
-        console.log(element);
-        const projectSection = document.getElementById("#projects");
+        const projectSection = document.getElementById("projects");
         projectSection.innerHTML += element;
     }
 
@@ -114,7 +126,22 @@
         return icons;
     }
 
-    loadProjectData();
+    function createErrorMessage()
+    {
+        const projectSection = document.getElementById("projects");
+        projectSection.innerHTML = `
+        <div class="error-message">
+            <p>
+                <span role="img" aria-label="warning">⚠️</span>
+                Failed to load project data. Please try again later.
+            </p>
+            <p>
+                If the issue persists, <a href="mailto:moakbar202@gmail.com">contact me</a>.
+            </p>
+        </div>
+    `;
+    }
 
+    loadProjectData();
 </script>
 </html>

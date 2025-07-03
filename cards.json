@@ -18,12 +18,12 @@
     },
     {
         "title": "PharmaFriends",
-        "thumbnail" : "assets/pharm.png",
+        "thumbnail" : "assets/pharmaFriends/pharm.png",
         "description" : "Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely. This was built with node.js, express and mysql.",
         "icons" : [
             {
                 "name" : "Node",
-                "url" : "./assets/mysql-svgrepo-com.svg"
+                "url" : "./assets/node-svgrepo-com.svg"
             },
             {
                 "name" : "MySQL",
@@ -38,8 +38,9 @@
     },
     {
         "title": "SSH Honeypot",
-        "thumbnail": "assets/ssh-honeypot.png",
-        "description": "A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to track user activity.",
+        "thumbnail": "assets/honeypot.png",
+        "github" : "https://github.com/makbar2/makbar2.caravan.github.io",
+        "description": "A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to track user activity. This was made for my dissertation project",
         "icons": [
             {
                 "name": "Python",
@@ -53,16 +54,13 @@
     },
     {
         "title": "Country Caravan Care",
-        "thumbnail": "assets/countrycaravan.png",
-        "description": "Developed a responsive, accessible website for Country Caravan Care, providing essential business information to customers. Visit: https://countrycaravancare.co.uk/",
+        "thumbnail": "assets/countrycare.png",
+        "github" : "https://github.com/makbar2/makbar2.caravan.github.io",
+        "description": "Developed a responsive, accessible website for <a href='https://countrycaravancare.co.uk/' >Country Caravan Care</a>, providing essential business information to customers.",
         "icons": [
             {
-                "name": "Python",
-                "url": "./assets/python-svgrepo-com(1).svg"
-            },
-            {
-                "name": "Terminal",
-                "url": "./assets/terminal-svgrepo-com.svg"
+                "name": "Boostrap",
+                "url": "./assets/bootstrap-svgrepo-com.svg"
             }
         ]
     }
