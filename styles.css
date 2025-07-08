@@ -270,3 +270,29 @@ figcaption {
     font-style: italic;
     line-height: 1.4;
 }
+
+.site-footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: #aaddff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
