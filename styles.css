@@ -8,7 +8,7 @@
 }
 
 .parallax-bg {
-    background-image: url(/assets/6221798.jpg);
+    background-image: url(./assets/6221798.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -162,7 +162,7 @@ main{
 }
 
 .pfp{
-    width: 400px;
+    width: 350px;
     height: 400px;
     box-shadow: #0b0b55 1.5vw 1.5vw;
 }
