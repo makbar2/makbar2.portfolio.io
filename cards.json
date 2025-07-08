@@ -18,7 +18,7 @@
     },
     {
         "title": "PharmaFriends",
-        "thumbnail" : "assets/pharmaFriends/pharm.png",
+        "thumbnail" : "assets/pharmaFriends/pharmafriendsLanding.png",
         "description" : "Developed the full-stack for web-application that would allow pharmacists to conduct NMS consultations remotely. This was built with node.js, express and mysql.",
         "icons" : [
             {

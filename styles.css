@@ -3,7 +3,7 @@
     font-family: "Liter", sans-serif;
     font-style: normal;
     color: #ffffff;
-    font-size: 16px;
+    font-size: large;
 
 }
 
@@ -243,4 +243,30 @@ summary{
     background-color: #ffe5e5;
     border: 1px solid red;
     border-radius: 8px;
+}
+picture>img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #b4b4b4;
+    font-style: italic;
+    line-height: 1.4;
 }
