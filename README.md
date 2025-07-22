@@ -10,4 +10,4 @@ A responsive, static portfolio website built with HTML5 and CSS3 to showcase my 
 ## 🛠 Tech Stack
 
 - HTML5
-- CSS3 (Flexbox, Grid, Media Queries)
+- CSS3 
