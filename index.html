@@ -15,16 +15,17 @@
 </head>
 <body >
     <header >
-        <nav class>
+        <nav>
             <ul class="flex-row nav-container">
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/mohammad-akbar-anwar-a20057207/">Linkedin</a></li>
             </ul>
         </nav>
     </header>
     <main class="content">
         <section id="about" >
-            <div class="flex-row center ">
+            <div class="flex-row center  ">
                 <h1>Akbar Anwar</h1>
                 <div class="cool-rect subtitle">
                     <p class="">Full-Stack Developer</p>
@@ -36,8 +37,7 @@
                 <div>
                     <p>
                         Hi I am a Computer Science and Cybersecurity graduate, currently studying for a Master's degree. The programming frameworks and languages that I currently use are: 
-                        Typescript, React, .NET
-
+                        Typescript, React and .NET.
                     </p>
                     <details>
                         <summary>About this website</summary>
@@ -45,7 +45,6 @@
                             To avoid repeating HTML, the card content is loaded from a JSON file. Then the data is rendered into the DOM (page).
                         </p>
                     </details>
-                    <a href="" style="margin-top: 10px; display: block;">View my CV</a>
                 </div>
                 <picture>
                     <img src="./assets/picture.jpg "  class="pfp" alt="picture of myself"/>
@@ -53,7 +52,7 @@
             </div>
         </section>
         <section>
-            <h1 class="cool-rect title"> Projects </h1>
+            <h1 class="cool-rect title"> Freelance & Projects </h1>
             <div class="grid-projects" id="projects"></div>
         </section>
     </main>
@@ -128,7 +127,6 @@
         const projectSection = document.getElementById("projects");
         projectSection.innerHTML += element;
     }
-
 
     function createIconList(iconList)
     {

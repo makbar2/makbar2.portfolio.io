@@ -15,22 +15,24 @@
     <header>
         <nav class="" >
             <ul class="flex-row nav-container">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                </ul>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#projects">Projects</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/mohammad-akbar-anwar-a20057207/">Linkedin</a></li>
+            </ul>
             </nav>
     </header>
     <main class="content">
         <div class="card explanation">
             <h1>OrderRx</h1>
-            <picture>
-                <img src="assets/pharmaFriends/pharmafriendsLanding.png" alt="landing page screenshot for pharmafriends">
-            </picture>
-            <h2>Summary</h2>
-            <P>
-                This was built for a pharmacy to replace their current method of ordering prescriptions on behalf of patients, which was done with just an excell document.
-                My solution was to give them an intuative ui that would show them each day what requests need to be made. The system would then just email the patient's GP with the 
-                medication request.
-            </P>
+            <figure>
+                <img src="assets/orderrx/login.png" alt="login page for order rx">
+            </figure>
+            <h2>Project Summary</h2>
+            <p>
+                I developed a UI for a pharmacy to replace their Excel-based prescription ordering.
+                It displayed weekly patient orders, allowed staff to email GPs with a single click, and then the user would check off received prescriptions. 
+                This streamlined workflow reduced errors and freed staff to focus on patient care.
+            </p>
             <h2>Tech Stack</h2>
             <ul>
                 <li>React</li>
@@ -38,10 +40,28 @@
                 <li>Shadcn</li>
                 <li>JWT Authentication</li>
             </ul>
-            <h2>Issues</h2>
+            <figure>
+                <img src="assets/orderrx/patientform.gif" alt="gif of the patient form">
+            </figure>
+            <h2>Role & Contributions</h2>
             <p>
-                One of the issues that I had with developing this program, was using minimal APIs. As i added more endpoints the more it got unmangiable. I did sort the endpoints into different
-                files based on the model that it was interacting with, however that d
+                As the sole developer, I designed and implemented both the entire stack.
+            </p>
+            <ul>
+                <li>Designed an intuitive dashboard that consolidates patient data entry, GP selection, and medication requests into a single form, improving efficiency and reducing errors.</li>
+                <li>Developed RESTful endpoints for patients, GPs, medications, users, and the join table connecting them, ensuring smooth data flow and integrity.</li>
+                <li>Implemented JWT-based authentication to manage secure staff access.</li>
+                <li>Built email automation logic to send prescription requests directly to GPs, reducing manual intervention.</li>
+            </ul>
+            <h2>Issues</h2>
+            <h3>Minimal APIs vs Controllers</h3>
+            <p>
+                One challenge I encountered was using minimal APIs in .NET. As the number of endpoints increased, injecting the repository into each one became repetitive and unmanageable. 
+                While controllers would have reduced boilerplate code, I chose to continue with the minimal api's as i was too far into development to redo everything.
+            </p>
+            <h2>Outcomes & Lessons Learned</h2>
+            <p>
+                This was my first full-stack project using C# and React. I had to quickly learn state management and API integration between the two different frameworks. 
             </p>
 
         </div>

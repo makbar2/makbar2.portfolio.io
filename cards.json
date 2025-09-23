@@ -41,7 +41,7 @@
         "title": "SSH Honeypot",
         "thumbnail": "assets/honeypot.png",
         "github" : "https://github.com/makbar2/SSHoneypot",
-        "description": "A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to track user activity. This was made for my dissertation project",
+        "description": "A medium-interaction SSH honeypot built with Python and Paramiko, featuring an emulated filesystem and logger to track user activity. This was made for my undergrad dissertation project.",
         "icons": [
             {
                 "name": "Python",
