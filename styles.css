@@ -7,20 +7,40 @@
 
 }
 
-.parallax-bg {
-    background-image: url(./assets/6221798.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+.center{
+    display: flex;
+    justify-content: center;
 }
 
+body {
+  /* Full screen */
+  z-index: 0;
+  min-height: 100vh;
+  margin: 0;
+  
+  /* Gradient overlay */
+  background: 
+    linear-gradient(to bottom right, #2c2c75, #050529), /* Blue gradient */
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+
+  /* Make it cover the entire screen */
+
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
 
 h1, h2,
 h3, h4 {
@@ -45,21 +65,32 @@ h3, h4 {
 
 .cool-rect
 {
-    
+
+    z-index: 2;
     padding: 2%;
     width: 70%;
     transform: skew(-20deg);
     background: linear-gradient(135deg, #3333d4, #5a5aed);
-
 }
 
 .cool-rect-sm{
+    z-index: 2;
     padding: 1%;
     margin-bottom: 10px;
     width: 70%;
     background-color: #3333d4;
     transform: skew(-20deg);
 }
+
+
+.subtitle{
+
+    margin-left: 10px;
+    width: fit-content;
+    padding: 2px;
+}
+
+
 
 .c1{
     color: #0b0b55
@@ -79,14 +110,9 @@ h3, h4 {
 }
 
 
-.subtitle{
-    width: fit-content;
-}
 
-.center{
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 .flex-col{
     display: flex;
@@ -129,6 +155,7 @@ main{
     margin-top: 5%;
     margin-bottom: 2%;
     margin-left: 5%;
+    white-space: nowrap;
 }
 
 .grid-about
@@ -151,7 +178,7 @@ main{
     gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
     .grid-projects, .grid-about{
         grid-template-columns: 1fr;
     }
@@ -162,8 +189,8 @@ main{
 }
 
 .pfp{
-    width: 350px;
-    height: 400px;
+    width: 280px;
+    height: 350px;
     box-shadow: #0b0b55 1.5vw 1.5vw;
 }
 .icon{

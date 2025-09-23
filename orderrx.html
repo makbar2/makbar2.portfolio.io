@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="bg"></div>
+    <header>
+        <nav class="" >
+            <ul class="flex-row nav-container">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="content">
+        <div class="card explanation">
+            <h1>OrderRx</h1>
+            <picture>
+                <img src="assets/pharmaFriends/pharmafriendsLanding.png" alt="landing page screenshot for pharmafriends">
+            </picture>
+            <h2>Summary</h2>
+            <P>
+                This was built for a pharmacy to replace their current method of ordering prescriptions on behalf of patients, which was done with just an excell document.
+                My solution was to give them an intuative ui that would show them each day what requests need to be made. The system would then just email the patient's GP with the 
+                medication request.
+            </P>
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>React</li>
+                <li>C# & .NET</li>
+                <li>Shadcn</li>
+                <li>JWT Authentication</li>
+            </ul>
+            <h2>Issues</h2>
+            <p>
+                One of the issues that I had with developing this program, was using minimal APIs. As i added more endpoints the more it got unmangiable. I did sort the endpoints into different
+                files based on the model that it was interacting with, however that d
+            </p>
+
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Mohammad Akbar Anwar. All rights reserved.</p>
+            <p>
+                <a href="mailto:moakbar202@gmail.com" aria-label="Send email to Mohammad Akbar Anwar">Contact</a> | 
+                <a href="/index.html#about">About</a> | 
+                <a href="/index.html#projects">Projects</a>
+            </p>
+            <p>
+                <a href="https://github.com/makbar202"  aria-label="Github Profile">
+                <img src="assets/github-svgrepo-com.svg" alt="GitHub icon" class="footer-icon" />
+            </a>
+        </p>
+        </div>
+    </footer>
+</body>
+</html>

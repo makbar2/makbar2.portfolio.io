@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noimageindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Akbar Anwar porfolio site</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body >
-    <div class="parallax-bg"></div>
     <header >
-        <nav class="" >
+        <nav class>
             <ul class="flex-row nav-container">
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -22,33 +24,31 @@
     </header>
     <main class="content">
         <section id="about" >
-            <div class="flex-col center">
-                <div class="header">
-            
-                    <h1>Mohammad Akbar Anwar</h1>
-                    <p class="cool-rect subtitle">Full-Stack Developer</p>
+            <div class="flex-row center ">
+                <h1>Akbar Anwar</h1>
+                <div class="cool-rect subtitle">
+                    <p class="">Full-Stack Developer</p>
                 </div>
             </div>
-            <h1 class="cool-rect title">About me</h1>
+          
+            <h1 class="cool-rect title"> About me </h1>
             <div class="grid-about">
                 <div>
                     <p>
-                        Hello i'm Akbar and i'm a Computer Science with Cybersecurity Graduate skilled in full-stack development. 
-                        I enjoy building tools for peoples needs.
-                        I am proficient in Typescript/Javascript, Python and C#.
+                        Hi I am a Computer Science and Cybersecurity graduate, currently studying for a Master's degree. The programming frameworks and languages that I currently use are: 
+                        Typescript, React, .NET
+
                     </p>
                     <details>
                         <summary>About this website</summary>
                         <p>
-                            This website is built with HTML, CSS, and JavaScript. The project cards are generated dynamically 
-                            by reading data from a JSON file, which avoids repetitive HTML and keeps the HTML clean. 
-                            This dynamic rendering approach could also be implemented using <a href="">React</a>.
+                            To avoid repeating HTML, the card content is loaded from a JSON file. Then the data is rendered into the DOM (page).
                         </p>
                     </details>
                     <a href="" style="margin-top: 10px; display: block;">View my CV</a>
                 </div>
                 <picture>
-                    <img src="./assets/picture.jpg "  class="pfp"/>
+                    <img src="./assets/picture.jpg "  class="pfp" alt="picture of myself"/>
                 </picture>
             </div>
         </section>
@@ -85,7 +85,7 @@
             }
             const data = await response.json();
             console.log(data);
-            data.map(createCard);
+            data.forEach(createCard);
         }catch(error )
         {
             console.error("Error loading project data:", error);
