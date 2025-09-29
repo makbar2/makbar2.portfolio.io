@@ -16,6 +16,9 @@
 <body >
     <header >
         <nav>
+            <div class="nav-header">
+                <span class="nav-toggle">&#9776;</span>
+            </div>
             <ul class="flex-row nav-container">
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -31,13 +34,21 @@
 
             </div>
           
-            <h1 class="cool-rect title"> About me </h1>
+       
             <div class="grid-about">
                 <div>
                     <p>
-                        Hi I am a Computer Science and Cybersecurity graduate, currently studying for a Master's degree. The programming frameworks and languages that I currently use are: 
-                        Typescript, React and .NET.
+                        Hi I am a Computer Science and Cybersecurity graduate, currently studying for a Master's degree.
                     </p>
+                    <h2>My Skills</h2>
+                    <ul>
+                        <li>Typescript/Javascript</li>
+                        <li>C# & .NET</li>
+                        <li>React</li>
+                        <li>Linux</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
                     <details>
                         <summary>About this website</summary>
                         <p>
@@ -54,10 +65,7 @@
             <h1 class="cool-rect title"> Freelance & Projects </h1>
             <div class="grid-projects" id="projects"></div>
         </section>
-        <section>
-            <h1 class="cool-rect title"> Skills </h1>
-            
-        </section>
+
     </main>
     <footer class="site-footer">
         <div class="footer-container">
@@ -76,6 +84,15 @@
     </footer>
 </body>
 <script>
+
+
+    const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav-container');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
+
     async function loadProjectData()
     {
         try{
