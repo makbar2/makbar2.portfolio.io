@@ -4,7 +4,7 @@
         "title": "OrderRx",
         "github" : "https://github.com/makbar2/OrderRx",
         "thumbnail" : "assets/scriptTrackOne.png",
-        "description" :  " Developed a system that would allow pharmacies to schedule prescription ordering on behalf of patients. This system was discontinued due to patient led ordering being introduced. It was built with a react front-end that interacted with a rest API made with .NET. ",
+        "description" :  " Developed a system that would allow pharmacies to schedule prescription ordering on behalf of patients.It was built with a react front-end that interacted with a rest API made with .NET. ",
         "icons" : [
             {
                 "name" : "Dotnet",
